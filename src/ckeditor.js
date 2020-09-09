@@ -29,6 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageResizeEditing from '@ckeditor/ckeditor5-image/src/imageresize/imageresizeediting';
 import ImageResizeHandles from '@ckeditor/ckeditor5-image/src/imageresize/imageresizehandles';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
@@ -67,6 +68,7 @@ ClassicEditor.builtinPlugins = [
 	Alignment,
 	Font,
 	SimpleUploadAdapter,
+	ImageResize,
 ];
 
 // Editor configuration.
