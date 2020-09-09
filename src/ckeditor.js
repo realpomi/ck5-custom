@@ -32,6 +32,7 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import ImageResizeEditing from '@ckeditor/ckeditor5-image/src/imageresize/imageresizeediting';
 import ImageResizeHandles from '@ckeditor/ckeditor5-image/src/imageresize/imageresizehandles';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -63,6 +64,7 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Alignment,
+	Font,
 ];
 
 // Editor configuration.
@@ -86,7 +88,11 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'|',
+			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
 		]
 	},
 	image: {
