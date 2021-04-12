@@ -35,6 +35,7 @@ import ImageResizeHandles from '@ckeditor/ckeditor5-image/src/imageresize/imager
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -69,6 +70,7 @@ ClassicEditor.builtinPlugins = [
 	Font,
 	SimpleUploadAdapter,
 	ImageResize,
+	htmlEmbed,
 ];
 
 // Editor configuration.
